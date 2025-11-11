@@ -200,3 +200,12 @@ body {
 .info a:hover {
     color: #ffcc00;         /* 鼠标悬停时变金色（可改） */
 }
+
+/* 让遮罩层(info)不阻挡鼠标点击，但保留里面的文字可点击 */
+.info {
+  pointer-events: none;
+}
+
+.info a {
+  pointer-events: auto;
+}
