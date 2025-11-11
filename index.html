@@ -139,7 +139,7 @@
                         imgListOne.style.left = 0
                         imgBoxList.forEach(item => {
                             if (item.id == 'last-img-box') {
-                                item.style.transform = `translateX(-160.68vw)`
+                                item.style.transform = `translateX(-187.46vw)`
                             } else {
                                 item.style.transform = 'none'
                             }
@@ -157,7 +157,7 @@
                             imgBoxList[0].style.transform = 'none'
                         } else {
                             // 正常情况下，点击next，则将最左侧的图片移到最后
-                            imgBoxList[0].style.transform = 'translateX(160.68vw)'
+                            imgBoxList[0].style.transform = 'translateX(187.46vw)'
                         }
                     }
                     // 模拟移动情况，将最左侧的图片（元素）移动到最后
@@ -172,13 +172,13 @@
                 // 因为左侧图片只会有一张，所以需要先移动图片到左侧，再进行imgListOne的移到
                 if (imgBoxList[0].id == 'last-img-box' && index != 0) {
                     // 当第一张图片为last-img-box时，说明已经跑完了一轮，此时相对于一开始的位置为-321.36vw
-                    imgBoxList[0].style.transform = 'translateX(-321.36vw)'
+                    imgBoxList[0].style.transform = 'translateX(-374.92vw)'
                 } else if (index < 0) {
                     // 这种情况与点击next按钮出现的回退现象一致
                     imgBoxList[0].style.transform = 'none'
                 } else {
                     // 正常情况下，点击last，则将最右侧的图片移到最前
-                    imgBoxList[0].style.transform = 'translateX(-160.68vw)'
+                    imgBoxList[0].style.transform = 'translateX(-187.46vw)'
                 }
                 imgListOne.style.left = imgBoxLength * index + "vw";
                 lastImgBox.style.transition = 'none'
@@ -190,7 +190,7 @@
                         imgListOne.style.left = 0
                         imgBoxList.forEach(item => {
                             if (item.id == 'last-img-box') {
-                                item.style.transform = 'translateX(-160.68vw)'
+                                item.style.transform = 'translateX(-187.46vw)'
                             } else {
                                 item.style.transform = 'none'
                             }
@@ -221,6 +221,5 @@
 </body>
 
 </html>
-
 
 //添加新图片时需要用26.78*(图片数量-1)
