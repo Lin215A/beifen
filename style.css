@@ -116,8 +116,8 @@ body {
 }
 
 #banner .img-wrapper .img-box:last-child {
-  -webkit-transform: translate(-160.68vw, 0);
-          transform: translate(-160.68vw, 0);
+  -webkit-transform: translate(-187.46vw, 0);
+          transform: translate(-187.46vw, 0);
 }
 
 .btn-group {
@@ -194,11 +194,12 @@ body {
 /*# sourceMappingURL=style.css.map */
 
 
-.info a {
-  color: white !important;
-  text-decoration: none !important;
-}
 
+
+.info a {
+    color: white;           /* 自定义字体颜色 */
+    text-decoration: none;  /* 去掉下划线 */
+}
 .info a:hover {
-  color: #ffcc00 !important;
+    color: #ffcc00;         /* 鼠标悬停时变金色（可改） */
 }
