@@ -192,3 +192,12 @@ body {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.info a {
+    color: white;           /* 自定义字体颜色 */
+    text-decoration: none;  /* 去掉下划线 */
+}
+.info a:hover {
+    color: #ffcc00;         /* 鼠标悬停时变金色（可改） */
+}
