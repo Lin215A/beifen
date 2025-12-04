@@ -77,13 +77,23 @@
                 <img src="./asset/image/Language.jpg" alt="">
                 </a>
             </div>
-            <div class="img-box" id="last-img-box">
+            <div class="img-box">
                 <div class="info">
                     <a href="#" onclick="window.open('https://sites.google.com/schools.nyc.gov/yiwuyishi-chinese-website/%E6%96%87%E7%AB%A0%E6%95%99%E8%82%B2/%E5%BF%86%E5%BC%83%E8%A1%A3', '_blank'); return false;">
                     <h3>忆弃衣</h3>
                     </a>
                 </div>
                 <a href="https://sites.google.com/schools.nyc.gov/yiwuyishi-chinese-website/%E6%96%87%E7%AB%A0%E6%95%99%E8%82%B2/%E5%BF%86%E5%BC%83%E8%A1%A3" target="_blank" rel="noopener noreferrer">
+                <img src="./asset/image/Uniform.png" alt="">
+                </a>
+            </div>
+            <div class="img-box" id="last-img-box">
+                <div class="info">
+                    <a href="#" onclick="window.open('https://sites.google.com/schools.nyc.gov/yiwuyishi-chinese-website/%E6%96%87%E7%AB%A0%E6%95%99%E8%82%B2/%E6%88%91%E7%9C%8B%E5%85%AD%E4%B9%A6', '_blank'); return false;">
+                    <h3>我看六书</h3>
+                    </a>
+                </div>
+                <a href="https://sites.google.com/schools.nyc.gov/yiwuyishi-chinese-website/%E6%96%87%E7%AB%A0%E6%95%99%E8%82%B2/%E6%88%91%E7%9C%8B%E5%85%AD%E4%B9%A6" target="_blank" rel="noopener noreferrer">
                 <img src="./asset/image/Uniform.png" alt="">
                 </a>
             </div>
@@ -158,7 +168,7 @@
                         imgListOne.style.left = 0
                         imgBoxList.forEach(item => {
                             if (item.id == 'last-img-box') {
-                                item.style.transform = `translateX(-187.46vw)`
+                                item.style.transform = `translateX(-vw)`
                             } else {
                                 item.style.transform = 'none'
                             }
@@ -176,7 +186,7 @@
                             imgBoxList[0].style.transform = 'none'
                         } else {
                             // 正常情况下，点击next，则将最左侧的图片移到最后
-                            imgBoxList[0].style.transform = 'translateX(187.46vw)'
+                            imgBoxList[0].style.transform = 'translateX(214.24vw)'
                         }
                     }
                     // 模拟移动情况，将最左侧的图片（元素）移动到最后
@@ -191,13 +201,13 @@
                 // 因为左侧图片只会有一张，所以需要先移动图片到左侧，再进行imgListOne的移到
                 if (imgBoxList[0].id == 'last-img-box' && index != 0) {
                     // 当第一张图片为last-img-box时，说明已经跑完了一轮，此时相对于一开始的位置为-321.36vw
-                    imgBoxList[0].style.transform = 'translateX(-374.92vw)'
+                    imgBoxList[0].style.transform = 'translateX(-428.48vw)'
                 } else if (index < 0) {
                     // 这种情况与点击next按钮出现的回退现象一致
                     imgBoxList[0].style.transform = 'none'
                 } else {
                     // 正常情况下，点击last，则将最右侧的图片移到最前
-                    imgBoxList[0].style.transform = 'translateX(-187.46vw)'
+                    imgBoxList[0].style.transform = 'translateX(-214.24vw)'
                 }
                 imgListOne.style.left = imgBoxLength * index + "vw";
                 lastImgBox.style.transition = 'none'
@@ -209,7 +219,7 @@
                         imgListOne.style.left = 0
                         imgBoxList.forEach(item => {
                             if (item.id == 'last-img-box') {
-                                item.style.transform = 'translateX(-187.46vw)'
+                                item.style.transform = 'translateX(-214.24vw)'
                             } else {
                                 item.style.transform = 'none'
                             }
